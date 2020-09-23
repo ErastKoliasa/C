@@ -1,3 +1,4 @@
+
 try:
     n = int(input('Введіть n (n - діапазон (2,...,n)): '))
 except ValueError:
