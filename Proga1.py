@@ -1,9 +1,3 @@
-
-try:
-    n = int(input('Введіть n (n - діапазон (2,...,n)): '))
-except ValueError:
-    print("Потрібно ввести число")
-list = []
 def prime(n):
     # перевіряємо чи n є просте
     # перевіряємо чи n ціле додатнє число
@@ -21,13 +15,23 @@ def prime(n):
         while n % x == 0:
             return False
     return True
+def prime2(n):
+    try:
+        for i in range(2, n):
+            if prime(i):
+                list.append(i)
+    except NameError:
+        print("Щось пішло не так")
+    for i in range(2, len(list)):
+        if list[i] - list[i - 1] == 2:
+            print(list[i - 1], list[i])
 try:
-    for i in range(2, n):
-        if prime(i):
-            list.append(i)
+    n = int(input('Введіть n (n - діапазон (2,...,n)): '))
+except ValueError:
+    print("Потрібно ввести число")
+list = []
+try:
+    print( prime2(n))
 except NameError:
-    print("Щось пішло не так")
-for i in range(2, len(list)):
-    if list[i] - list[i - 1] == 2:
-        print(list[i - 1], list[i])
+    print("Перевірте чи правильно введені дані")
 input('Нажміть любу клавішу щоб закрити програму')
