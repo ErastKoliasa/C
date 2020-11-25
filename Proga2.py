@@ -1,3 +1,4 @@
+
 from random import randint
 min = 1000
 max = 10000
