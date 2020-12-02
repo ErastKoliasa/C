@@ -63,3 +63,4 @@ class Structure:
         for i in range(len(self.structure)):
             file.write(str(self.structure[i]) + '\n')
         file.close()
+        
