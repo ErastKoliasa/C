@@ -1,3 +1,4 @@
+
 from random import randint
 import random
 min = 1000
