@@ -152,21 +152,7 @@ namespace Task
 
             return FieldsArray;
         }
-        private void Sorting(int operationNumber)
-        {
-            switch (operationNumber)
-            {
-                default: break;
-                case 1: Сontainers = Сontainers.OrderBy(x => x.Id).ToList(); break;
-                case 2: Сontainers = Сontainers.OrderBy(x => x.Number).ToList(); break;
-                case 3: Сontainers = Сontainers.OrderBy(x => x.DepartureCitys).ToList(); break;
-                case 4: Сontainers = Сontainers.OrderBy(x => x.ArrivalCitys).ToList(); break;
-                case 5: Сontainers = Сontainers.OrderBy(x => x.DepatureDate).ToList(); break;
-                case 6: Сontainers = Сontainers.OrderBy(x => x.ArrivalCitys).ToList(); break;
-                case 7: Сontainers = Сontainers.OrderBy(x => x.ItemsCount).ToList(); break;
-
-            }
-        }
+        
         private int SearchContainersId()
         {
             int Id = 0;;
