@@ -19,7 +19,7 @@ namespace Task
         #endregion
 
         #region Public Methods
-        public void ReadConatainerDateFromFile()//Сделать длегат на конетйнер криейт едд и делит
+        public void ReadConatainerDateFromFile()
         {
             if (File.Exists(FilePath) is false)
                 using (File.Create(FilePath)) { }
